@@ -1,26 +1,42 @@
+body {
+	overflow: hidden;
+	
+}
+
+.grain {
+	background-image: url(http://api.thumbr.it/whitenoise-2000x2000.png?background=fffaf000&noise=c2aa90&density=50&opacity=35);
+	height: 2000px;
+	width: 2000px;
+	z-index: 900;
+	position: absolute;
+	pointer-events: none;
+}
+
 .achtergrond {
 	background-image: url(VerhaalElementenMayorsHouse/MayorInterior.png);
-	height: 1000px;
-	width: 800px;
+	height: 640px;
+	max-height: 100%;
+	width: 100%;
 	background-size: contain;
+	background-position: center;
 	background-repeat: no-repeat;
 	transition: all 1s;
-	position: relative;
+	position: absolute;
 	overflow: hidden;
 	z-index: -100;
+	border-width: 3px;	
 }
 
 .kat {
 	background-image: url(KlikbareElementenMayorsHouse/kat1.png);
 	height: 200px;
 	width: 100px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	top: 35%;
-	left: 12%;
+	top: 50%;
+	left: 35%;
 	z-index: 2;
 }
 
@@ -28,27 +44,26 @@
 	background-image: url(KlikbareElementenMayorsHouse/kat2.png);
 	height: 200px;
 	width: 100px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	top: 35%;
-	left: 12%;
+	top: 50%;
+	left: 35%;
 	z-index: 2;
+	filter: drop-shadow(0px 0px 50px yellow);
 }
 
 .gingerbread {
 	background-image: url(KlikbareElementenMayorsHouse/Gingerbread1.png);
 	height: 200px;
 	width: 100px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	top: 55%;
-	left: 17%;
+	bottom: 5%;
+	left: 35%;
 	z-index: 2;
 }
 
@@ -56,79 +71,76 @@
 	background-image: url(KlikbareElementenMayorsHouse/Gingerbread2.png);
 	height: 200px;
 	width: 100px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	top: 55%;
-	left: 17%;
+	bottom: 5%;
+	left: 35%;
 	z-index: 2;
+	filter: drop-shadow(0px 0px 50px yellow);
 }
 
 .terugpijl {
 	background-image: url(VerhaalElementenMayorsHouse/Pijlterug.png);
-	height: 200px;
+	height: 100px;
 	width: 100px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
 	z-index: 2;
-	top: 85%;
-	left: 20%;
+	bottom: 0%;
+	left: 40%;
 }
 
 .heenpijl {
 	background-image: url(VerhaalElementenMayorsHouse/Pijlvoor.png);
-	height: 200px;
+	height: 100px;
 	width: 100px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
 	z-index: 2;
-	top: 85%;
-	left: 30%;
+	bottom: 0%;
+	left: 55%;
 }
 
 .DT1 {
 	background-image: url(VerhaalElementenMayorsHouse/DT1.png);
 	height: 550px;
 	width: 400px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	top: 15%;
-	left: -5%;
+	bottom: 5%;
+	left: 18%;
 }
 
 .Bird1 {
 	background-image: url(VerhaalElementenMayorsHouse/Bird1.png);
 	height: 300px;
 	width: 200px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	top: -5%;
-	left: 15%;
+	top: 5%;
+	left: 35%;
 }
 
 .Narrator1 {
 	background-image: url(VerhaalElementenMayorsHouse/Narrator1.png);
 	height: 600px;
 	width: 500px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	top: -36%;
-	left: 0%;
+	top: 0%;
+	left: 21%;
 	animation: 3s ease-out 0s 1 slideInFromTop;
 }
 
@@ -145,13 +157,12 @@
 	background-image: url(VerhaalElementenMayorsHouse/Text1.png);
 	height: 350px;
 	width: 275px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	top: 0%;
-	left: 0%;
+	top: 20%;
+	left: 23%;
 	animation: 3s ease-out 0s 1 slideInFromBottom;
 }
 
@@ -168,51 +179,48 @@
 	background-image: url(KlikbareElementenMayorsHouse/Mayor1.png);
 	height: 500px;
 	width: 400px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	top: 27%;
-	left: 26%;
+	bottom: -15%;
+	right: 22%;
 }
 
 .mayor2 {
 	background-image: url(KlikbareElementenMayorsHouse/Mayor2.png);
 	height: 500px;
 	width: 400px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	top: 27%;
-	left: 26%;
+	bottom: -15%;
+	right: 22%;
+	filter: drop-shadow(0px 0px 50px lightgreen);
 }
 
 .Husband1 {
 	background-image: url(VerhaalElementenMayorsHouse/Husband1.png);
 	height: 350px;
 	width: 275px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	top: 15%;
-	left: 23%;
+	bottom: 27%;
+	right: 37%;
 }
 
 .facevase {
 	background-image: url(KlikbareElementenMayorsHouse/facevase1.png);
 	height: 150px;
 	width: 120px;
-	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 27%;
-	left: 20%;
+	top: 30%;
+	right: 50%;
 	transition: all 1s;
 	z-index: 1;
 }
@@ -221,26 +229,25 @@
 	background-image: url(KlikbareElementenMayorsHouse/facevase2.png);
 	height: 150px;
 	width: 120px;
-	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 27%;
-	left: 20%;
+	top: 30%;
+	right: 50%;
 	transition: all 1s;
 	z-index: 1;
+	filter: drop-shadow(0px 0px 50px yellow);
 }
 
 .salvatogre {
 	background-image: url(KlikbareElementenMayorsHouse/salvatogre1.png);
 	height: 200px;
 	width: 300px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	left: 35%;
+	right: 20%;
 	top: 2%;
 
 }
@@ -249,46 +256,44 @@
 	background-image: url(KlikbareElementenMayorsHouse/salvatogre2.png);
 	height: 200px;
 	width: 300px;
-	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	transition: all 1s;
 	position: absolute;
-	left: 35%;
+	right: 20%;
 	top: 2%;
+	filter: drop-shadow(0px 0px 50px yellow);
 }
 
 .shoe {
 	background-image: url(KlikbareElementenMayorsHouse/shoe1.png);
 	height: 85px;
 	width: 300px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
     transition: all 1s;
-		position: absolute;
-		left: 38%;
-		top: 40%;
+	position: absolute;
+	right: 10%;
+	bottom: 45%;
 }
 
 .shoe2 {
 	background-image: url(KlikbareElementenMayorsHouse/shoe2.png);
 	height: 85px;
 	width: 300px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
     transition: all 1s;
-		position: absolute;
-		left: 38%;
-		top: 40%;
+	position: absolute;
+	right: 10%;
+	bottom: 45%;
+	filter: drop-shadow(0px 0px 50px yellow);
 }
 
 .huis {
 	background-image: url(Afbeeldingen/House1.png);
 	height: 400px;
 	width: 300px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
     transition: all 1s;
@@ -298,7 +303,6 @@
 	background-image: url(Afbeeldingen/House2.png);
 	height: 400px;
 	width: 300px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
     transition: all 1s;
@@ -309,7 +313,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/Narrator2.png);
 	height: 600px;
 	width: 500px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
@@ -323,7 +326,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/Text2.png);
 	height: 350px;
 	width: 275px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
@@ -338,7 +340,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/DT2.png);
 	height: 550px;
 	width: 400px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
@@ -351,7 +352,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/Husband2.png);
 	height: 350px;
 	width: 275px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
@@ -364,7 +364,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/Bird2.png);
 	height: 300px;
 	width: 200px;
-	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	transition: all 1s;
@@ -378,7 +377,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/Text3.png);
 	height: 350px;
 	width: 275px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
@@ -392,7 +390,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/DT3.png);
 	height: 550px;
 	width: 400px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
@@ -405,7 +402,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/Husband3.png);
 	height: 350px;
 	width: 275px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
@@ -418,7 +414,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/Bird3.png);
 	height: 300px;
 	width: 200px;
-	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	transition: all 1s;
@@ -432,7 +427,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/Text4.png);
 	height: 350px;
 	width: 275px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
@@ -446,7 +440,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/DT4.png);
 	height: 550px;
 	width: 400px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
@@ -459,7 +452,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/Husband4.png);
 	height: 350px;
 	width: 275px;
-	background-position: center;
 	background-size: contain;
     background-repeat: no-repeat;
 	transition: all 1s;
@@ -472,7 +464,6 @@
 	background-image: url(VerhaalElementenMayorsHouse/Bird4.png);
 	height: 300px;
 	width: 200px;
-	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	transition: all 1s;
